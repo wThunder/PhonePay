@@ -10,12 +10,14 @@
 			"animationDuration": 50
 		}
 	},
-	"pages": [{
+	"pages": [
+		{
+			"path": "pages/login/login/index1"
+		},
+		{
 		"path": "pages/index/index"
 	}, {
 		"path": "pages/my/my"
-	}, {
-		"path": "pages/login/login/index1"
 	}, {
 		"path": "pages/my/setup"
 	}, {
