@@ -103,7 +103,8 @@ export default {
 			HotServers: [
 				{
 					icon: '/static/img/gjj-img/zhxx.png',
-					name: '账户信息'
+					name: '账户信息',
+					url: '/pages/gjj/users-details'
 				},
 				{
 					icon: '/static/img/gjj-img/dkxx.png',
@@ -122,10 +123,10 @@ export default {
 			userData: {},
 			datadata: {
 				balance:65492.73,
-				new_out_time:5000,
+				new_out_time:'2024-02-22',
 				new_out:2000,
-				new_in:65492.73,
-				new_in_time:5000
+				new_in:3926.73,
+				new_in_time:'2024-03-23'
 				
 			}
 		};
