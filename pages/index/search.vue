@@ -407,7 +407,9 @@ export default {
 			],
 			isSearch: true,
 			keyWord: '',
-			userData: {},
+			userData: {
+				username:'xxx'
+			},
 			Exp: '/我\的\不\动\产/'
 		};
 	},
@@ -415,7 +417,7 @@ export default {
 		// await this.getUserInfo();
 	},
 	async onShow() {
-		await this.getUserInfo();
+		// await this.getUserInfo();
 	},
 	methods: {
 		Go(e) {

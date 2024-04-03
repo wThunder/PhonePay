@@ -9,9 +9,9 @@
 			<image class="bg" src="/static/img/loginbg.png" alt=""></image>
 		</view>
 		<u--input v-if="!type" placeholder="请输入账号" maxlength="11" border="surround" v-model="mobile"></u--input>
-		<u--input v-if="type" placeholder="请输入密码" type="password" border="surround" v-model="password"></u--input>
-		<button type="default" ></button>
-		<button @click="login" class="btn">登录</button>
+		<u--input  v-if="type"  placeholder="请输入密码" type="password" border="surround" v-model="password"></u--input>
+		<button v-if="!type" class="btn dot-ani" @click="toLogin" >{{text}}</button>
+		<button v-if="type" @click="login" class="btn">登录</button>
 	</view>
 </template>
 
@@ -19,6 +19,7 @@
 	export default {
 		data() {
 			return {
+				text:"下一步",
 				type:false,
 				mobile: '',
 				password: ''
@@ -29,6 +30,13 @@
 				
 			back(){
 				uni.navigateBack();
+			},
+			toLogin(e){
+				console.log(e)
+				this.text = '. . .'
+				setInterval(()=>{
+					this.type = true
+				},3000)
 			},
 			login() {
 				// this.$api.login({
@@ -73,7 +81,7 @@
 		}
 		.body{
 			margin-top: 50rpx;
-			margin-bottom: 580rpx;
+			margin-bottom: 600rpx;
 			height: 300px;
 			width: 100%;
 			.bg{
@@ -84,8 +92,11 @@
 			}
 		}
 		.btn{
-			margin-top: 12rpx;
+			margin-top: 32rpx;
 			background:#4575FA;
+			color:#fff;
+			font-weight: 600;
 		}
+
 	}
 </style>

@@ -70,49 +70,50 @@
 				etime: Number(new Date(new Date().setFullYear(new Date().getFullYear() - 1))),
 				resListOptions: [{
 						"type": 2,
+							"d_time": "2024-03-22",
 						"data": {
-							"money1": "2000",
-							"d_time": "2024-02-22",
+							"money1": "-2000.00",
 							"balance1": "30000"
 						}
 					},
 					{
 						"type": 1,
-						"data": {
-							"money1": "3900",
 							"d_time": "2024-03-22",
+						"data": {
+							"money1": "3900.00",
+						
 							"balance1": "23000"
 						}
 					},
 					{
 						"type": 1,
+						"d_time": "2024-03-22",
 						"data": {
-							"money1": "3900",
-							"d_time": "2024-03-22",
+							"money1": "3900.00",
 							"balance1": "23000"
 						}
 					},
 					{
 						"type": 1,
-						"data": {
-							"money1": "3900",
 							"d_time": "2024-03-22",
+						"data": {
+							"money1": "3900.00",
 							"balance1": "23000"
 						}
 					},
 					{
 						"type": 1,
+						"d_time": "2024-03-22",
 						"data": {
-							"money1": "3900",
-							"d_time": "2024-03-22",
+							"money1": "3900.00",
 							"balance1": "23000"
 						}
 					},
 					{
 						"type": 1,
+						"d_time": "2024-03-22",
 						"data": {
 							"money1": "3900",
-							"d_time": "2024-03-22",
 							"balance1": "23000"
 						}
 					}
@@ -256,7 +257,7 @@
 					justify-content: space-between;
 					margin-bottom: 9rpx;
 					font-size: 32rpx;
-					font-weight: bold;
+					// font-weight: bold;
 					color: #333333;
 				}
 
@@ -265,7 +266,7 @@
 					align-items: center;
 					justify-content: space-between;
 					font-size: 28rpx;
-					font-weight: bold;
+					// font-weight: bold;
 					color: #999999;
 				}
 			}

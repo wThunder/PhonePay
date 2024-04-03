@@ -104,7 +104,7 @@ export default {
 				{
 					icon: '/static/img/gjj-img/zhxx.png',
 					name: '账户信息',
-					url: '/pages/gjj/users-details'
+					url: '/pages/gjj/users'
 				},
 				{
 					icon: '/static/img/gjj-img/dkxx.png',
